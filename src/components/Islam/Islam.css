@@ -1,0 +1,11 @@
+.islam {
+    background-image: url("https://i.pinimg.com/originals/a3/ae/a4/a3aea4a175338a1f38ef15cecd527f6b.jpg"),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

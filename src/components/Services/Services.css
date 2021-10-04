@@ -1,0 +1,29 @@
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.row{
+    border: 1px solid red;
+} */
+
+.service-title{
+    margin-top: 50px;
+    color: rgb(14, 90, 65);
+}
+
+  .cart {
+    padding: 10px;
+    height: 405px;
+    border: 1px solid gray;
+    margin-top: 50px;
+
+  
+    /* background-color: #000; */
+  }
+  .text-area {
+    text-align: center;
+    /* background-color: rgb(131, 124, 124); */
+   
+  }

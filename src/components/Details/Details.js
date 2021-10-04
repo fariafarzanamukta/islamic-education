@@ -1,46 +1,41 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
+import "./Details.css";
 
 const Details = () => {
-    const { serviceId } = useParams();
-    console.log(serviceId);
-
-    const [details, setDetails] = useState({});
-    console.log(details);
+    const { detailsId } = useParams();
+    const [coursedetails, setCouserdetails] = useState({});
 
     useEffect(() => {
-        fetch(
-            './data.json')
-            .then((res) => res.json())
-            .then((data) => setDetails(data))
-    }, []);
+        let abc = '';
+        fetch(`http://localhost:3000/data.json`)
+            .then(res => res.json())
+            .then(data => {
+                abc = data.find(result => (result.id === (detailsId)))
+                setCouserdetails(abc);
+            })
+    }, [detailsId])
     return (
         <div>
-            <div className=" details-container">
+            <div className="details-info">
                 <Navbar></Navbar>
-                <div className="details">
+            </div>
+            <br /><br />
 
-
-                    <div className="row d-flex details-teams align-items-center justify-content-center">
-                        <div className="col-md-6">
-                            <div className="team-img">
-                                <img className="w-50" src={details.img} alt="" />
-                            </div>
-                            <h3>{details.title}</h3>
-                            <p>{details.price}</p>
-
-                        </div>
-                        <div className="col-md-6">
-                            <div className="description-team">
-                                <p>{details.description}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="container">
+                <img src={coursedetails?.img} alt="" />
+                <h4>Title:{coursedetails?.title}</h4>
+                <h4>Price{coursedetails?.price}</h4>
+                <h4>Instructor Name:{coursedetails?.InstructorName}</h4>
+                <h4>Instructor Info:{coursedetails?.InstructorInfo}</h4>
+                <h4>Description:{coursedetails?.description}</h4>
 
             </div>
+
         </div>
+
+
     );
 };
 

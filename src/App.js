@@ -4,9 +4,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
 import About from "./components/About/About";
-import Service from "./components/Service/Service";
 import Islam from "./components/Islam/Islam";
 import Details from "./components/Details/Details";
+import OurService from "./OurService/OurService";
+import NotFound from "./components/NotFound/NotFound";
 
 
 function App() {
@@ -20,17 +21,20 @@ function App() {
           <Route exact path="/home">
             <Home></Home>
           </Route>
+          <Route path="/homes/:detailsId">
+            <Details></Details>
+          </Route>
           <Route exact path="/about">
             <About></About>
           </Route>
-          <Route exact path="/service">
-            <Service></Service>
+          <Route exact path="/ourservices">
+            <OurService></OurService>
           </Route>
-          <Route path="/details/:serviceId">
-              <Details></Details>
-            </Route>
           <Route exact path="/islam">
             <Islam></Islam>
+          </Route>
+          <Route exact path="*">
+            <NotFound></NotFound>
           </Route>
 
         </Switch>

@@ -10,12 +10,12 @@
     background-position: center;
 }
 .pillar{
-  margin-top: 600px;
-  
+  margin-top: -500px;
 }
 
 .pillar h2{
   color: darkgreen;
+  margin-top: 600px;
 }
 .img{
 height: 200px;
@@ -33,6 +33,10 @@ button{
 }
 .footer{
   margin-top: 200px;
+}
+.islam-info{
+  box-shadow: 10px 10px 20px rgb(106, 100, 100);
+  background-color: cadetblue;
 }
 
 

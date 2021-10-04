@@ -12,6 +12,7 @@ const About = () => {
         <div className="about">
             <div>
                 <Navbar></Navbar>
+
                 <div className="about-info">
                     <h2>Followers of Islam are called Muslims.</h2>
                     <CardGroup>

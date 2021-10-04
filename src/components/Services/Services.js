@@ -1,34 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css'
 
 
 const Services = () => {
-    return (
-        <div className="container">
-            <div className="service-title">
-                <h2>Our Services</h2>
-            </div>
+    const [services, setServices] = useState("");
 
-            <div className="teams p-4 g-4">
-                <div className="row ">
+
+    useEffect(() => {
+        fetch(
+            './data.json'
+        )
+            .then((res) => res.json())
+            .then((data) => setServices(data));
+    }, [services]);
+    return (
+        <div className="container all-teams">
+            <div className="all-team">
+                <h1>Our Services</h1>
+            </div>
+            <div className="teams">
+                <div className="row">
+
                     <div className="col-md-6">
                         <div className="cart">
                             <div className="cart-details">
-                                <img className="w-50" src="images" alt="" />
+                                <img className="w-50" src="" alt="" />
                             </div>
                             <div className="text-area">
-                                <h4>Title:</h4>
-                                <p>Price:</p>
-
-                                <button className="btn btn-success">More Details</button>
-
+                                <Link to='/details'>
+                                    <button className="btn btn-success">Details</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

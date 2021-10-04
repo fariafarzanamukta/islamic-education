@@ -9,3 +9,30 @@
     background-size: cover;
     background-position: center;
 }
+.pillar{
+  margin-top: 600px;
+  
+}
+
+.pillar h2{
+  color: darkgreen;
+}
+.img{
+height: 200px;
+width: 258px;
+
+}
+button{
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid rgba(94, 85, 138, 0.466);
+  background-image: linear-gradient(rgba(204, 79, 20, 0.856),rgba(67, 134, 70, 0.911));
+  color: white;
+}
+.footer{
+  margin-top: 200px;
+}
+
+

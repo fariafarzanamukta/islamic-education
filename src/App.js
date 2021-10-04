@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import About from "./components/About/About";
 import Service from "./components/Service/Service";
 import Islam from "./components/Islam/Islam";
+import Details from "./components/Details/Details";
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
           <Route exact path="/service">
             <Service></Service>
           </Route>
+          <Route path="/details/:serviceId">
+              <Details></Details>
+            </Route>
           <Route exact path="/islam">
             <Islam></Islam>
           </Route>

@@ -10,6 +10,5 @@
  </li>
  <li>
  <h4><b>Mainly it is muslim website.Specially muslim people will use and also for other people.It is really helpful for every person.</b></h4>
- h4>
 </li>
 </ul>

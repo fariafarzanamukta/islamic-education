@@ -9,17 +9,17 @@
     background-size: cover;
     background-position: center;
 }
-.islam-info{
-    /* height: 200px; */
+ .ourservice-info{
     width: 900px;
-    margin-top: 600px;
-    text-align: center;
-    justify-content: center;
-    margin-left: 200px;
+    margin-top: 500px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    /* text-align: center;
+    justify-content: center; */
     box-shadow: 10px 10px 20px rgb(106, 100, 100);
 
 }
-.islam-img{
+/* .ourservice-img{
     height: 200px;
     width: 400px;
-}
+}  */

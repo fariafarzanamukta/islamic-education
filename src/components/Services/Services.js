@@ -18,7 +18,7 @@ const Services = () => {
     return (
         <div className="align-items-center justify-content-center">
             <h1>Our Services</h1>
-            <div className="services-info">
+            <div className="container services-info">
                 {
                     services.map(service => <Service
                         service={service}

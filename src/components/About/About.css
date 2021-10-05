@@ -1,5 +1,5 @@
 .about {
-    background-image: url("https://d2tyltutevw8th.cloudfront.net/media/image/mosque-night-640-250-1533312642.jpg"),
+    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/07/28/409555/15ff8c2bd911656f3356dc4f4dee3e4e.jpg"),
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       background-repeat: no-repeat;
     height: 700px;
@@ -11,14 +11,13 @@
 }
 
 .about-info{
-  margin-top: 650px;
-  margin-left: 300px;
-  margin-right: 265px;
+  margin-top: 550px;
+  
   
 }
-.about-img{
-  height: 300px;
+
+.about-details{
   width: 700px;
-  
+  margin-left: 200px;
   
 }

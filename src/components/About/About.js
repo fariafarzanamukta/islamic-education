@@ -13,9 +13,9 @@ const About = () => {
         <div className="about">
             <Navbar></Navbar>
             <div className="container about-info">
-                <h2>Followers of Islam are called Muslims.</h2>
+                <h2>Followers of Islam are called Muslims</h2>
                 <div className="about-details">
-                    <CardGroup>
+                    <CardGroup className="">
                         <Card>
                             <Card.Img variant="top" className="about-img w-100" src="https://images.pexels.com/photos/2233416/pexels-photo-2233416.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                             <Card.Body>

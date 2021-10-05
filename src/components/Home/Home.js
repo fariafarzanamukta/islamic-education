@@ -12,6 +12,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Services></Services>
+            <br /><br />
             <Footer></Footer>
 
 
